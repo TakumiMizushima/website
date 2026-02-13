@@ -30,23 +30,23 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 2. Education */}
+        {/* 2. Education: 1列に修正 */}
         <section>
           <h2 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">
             Education
           </h2>
-          <div className="grid grid-cols-[80px_1fr] gap-4 text-sm leading-relaxed">
-            <span className="text-slate-400 font-medium pt-0.5">2023.04 -</span>
-            <div>
-              <a 
-                href="https://www.math.s.chiba-u.ac.jp/index.html"
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="font-medium text-slate-900 hover:text-blue-700 hover:underline underline-offset-4 transition-colors"
-              >
-                千葉大学 理学部 数学・情報数理学科
-              </a>
-            </div>
+          <div className="flex flex-wrap items-baseline gap-x-4 text-sm leading-relaxed">
+            <span className="text-slate-400 font-medium whitespace-nowrap">
+              2023.04 - 2027.03
+            </span>
+            <a 
+              href="https://www.math.s.chiba-u.ac.jp/index.html"
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="font-medium text-slate-900 hover:text-blue-700 hover:underline underline-offset-4 transition-colors"
+            >
+              千葉大学 理学部 数学・情報数理学科
+            </a>
           </div>
         </section>
 
@@ -77,7 +77,6 @@ export default function Home() {
             Materials
           </h2>
           <div className="flex items-start gap-3">
-            {/* StreamlitへのリンクなのでExternalLinkアイコンを例として使用 */}
             <ExternalLink className="w-5 h-5 text-slate-400 mt-0.5 flex-shrink-0" />
             <div>
               <a 
@@ -88,9 +87,6 @@ export default function Home() {
               >
                 千葉大学数学25ヵ年解答解説 (2000-2025)
               </a>
-              <p className="text-slate-500 text-sm mt-1 font-light">
-                (Private Repository)
-              </p>
             </div>
           </div>
         </section>
