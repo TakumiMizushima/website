@@ -99,7 +99,7 @@ export default function Home() {
               <Github className="w-5 h-5 text-slate-400 mt-0.5 flex-shrink-0" />
               <div>
                 <a 
-                  href="https://github.com/TakumiMizushima/Chiba_from2000to2025"
+                  href="https://chibafrom2000to2025.streamlit.app/"
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="font-medium text-slate-900 hover:text-blue-700 hover:underline underline-offset-4 transition-colors"
