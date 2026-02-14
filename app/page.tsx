@@ -1,4 +1,3 @@
-import Image from "next/image"; // 画像表示用のコンポーネントをインポート
 import { Github, Mail, ExternalLink } from "lucide-react";
 
 export default function Home() {
@@ -10,12 +9,11 @@ export default function Home() {
         <header className="flex items-center gap-6">
           {/* 写真アイコン部分 */}
           <div className="relative w-20 h-20 md:w-24 md:h-24 flex-shrink-0 bg-slate-200 rounded-full overflow-hidden border-2 border-slate-100 shadow-sm">
-            <Image
-              src="/profile.jpg" // publicフォルダ内の画像ファイル名を指定
+            {/* Next.jsのImageタグではなく、通常のimgタグを使用 */}
+            <img
+              src="/profile.jpg"
               alt="水島 匠のプロフィール写真"
-              fill // 親要素に合わせて自動でリサイズ・トリミング
-              className="object-cover" // 枠に合わせて画像を綺麗に切り抜く
-              priority // ページの重要コンテンツとして優先読み込み
+              className="w-full h-full object-cover"
             />
           </div>
 
