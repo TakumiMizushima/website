@@ -155,19 +155,6 @@ export default function Home() {
                 <span className="inline-block">数学情報科学専攻 数学・情報数理学コース</span>
               </a>
             </div>
-            <div className="flex items-start gap-3">
-              <ExternalLink className="w-4 h-4 text-slate-400 mt-1 flex-shrink-0" />
-              <a 
-                href="https://www.education.tsukuba.ac.jp/" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-slate-600 hover:text-slate-900 transition-colors underline decoration-slate-300 underline-offset-4 leading-relaxed"
-              >
-                <span className="inline-block">筑波大学 人間総合科学学術院 教育学位プログラム</span>
-                {" "}
-                <span className="inline-block">次世代学校教育創成サブプログラム 数学教育領域</span>
-              </a>
-            </div>
           </div>
         </section>
 
