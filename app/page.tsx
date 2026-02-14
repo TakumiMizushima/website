@@ -1,3 +1,4 @@
+import Image from "next/image"; // 画像表示用のコンポーネントをインポート
 import { Github, Mail, ExternalLink } from "lucide-react";
 
 export default function Home() {
@@ -5,14 +6,28 @@ export default function Home() {
     <div className="min-h-screen bg-slate-50 text-slate-700 py-20 px-6 font-sans">
       <main className="max-w-xl mx-auto space-y-16">
         
-        {/* Header */}
-        <header className="flex items-baseline gap-4">
-          <h1 className="text-3xl font-bold text-slate-900 tracking-tight">
-            水島 匠
-          </h1>
-          <p className="text-lg text-slate-500 font-medium whitespace-nowrap">
-            Takumi Mizushima
-          </p>
+        {/* Header: 写真と名前 */}
+        <header className="flex items-center gap-6">
+          {/* 写真アイコン部分 */}
+          <div className="relative w-20 h-20 md:w-24 md:h-24 flex-shrink-0 bg-slate-200 rounded-full overflow-hidden border-2 border-slate-100 shadow-sm">
+            <Image
+              src="/profile.jpg" // publicフォルダ内の画像ファイル名を指定
+              alt="水島 匠のプロフィール写真"
+              fill // 親要素に合わせて自動でリサイズ・トリミング
+              className="object-cover" // 枠に合わせて画像を綺麗に切り抜く
+              priority // ページの重要コンテンツとして優先読み込み
+            />
+          </div>
+
+          {/* 名前部分 */}
+          <div>
+            <h1 className="text-3xl font-bold text-slate-900 tracking-tight leading-tight">
+              水島 匠
+            </h1>
+            <p className="text-lg text-slate-500 font-medium whitespace-nowrap mt-1">
+              Takumi Mizushima
+            </p>
+          </div>
         </header>
 
         {/* 1. Affiliation */}
