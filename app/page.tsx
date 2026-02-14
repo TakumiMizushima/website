@@ -5,11 +5,10 @@ export default function Home() {
     <div className="min-h-screen bg-slate-50 text-slate-700 py-20 px-6 font-sans">
       <main className="max-w-xl mx-auto space-y-16">
         
-        {/* Header: 写真と名前 */}
-        <header className="flex items-center gap-6">
-          {/* 写真アイコン部分 */}
-          <div className="relative w-20 h-20 md:w-24 md:h-24 flex-shrink-0 bg-slate-200 rounded-full overflow-hidden border-2 border-slate-100 shadow-sm">
-            {/* Next.jsのImageタグではなく、通常のimgタグを使用 */}
+        {/* Header: Twitter風アイコンと名前を1行で表示 */}
+        <header className="flex items-center gap-4">
+          {/* 写真アイコン部分（小さくしました） */}
+          <div className="relative w-12 h-12 flex-shrink-0 bg-slate-200 rounded-full overflow-hidden border border-slate-100 shadow-sm">
             <img
               src="/profile.jpg"
               alt="水島 匠のプロフィール写真"
@@ -17,14 +16,16 @@ export default function Home() {
             />
           </div>
 
-          {/* 名前部分 */}
+          {/* 名前部分（横並びに変更） */}
           <div>
-            <h1 className="text-3xl font-bold text-slate-900 tracking-tight leading-tight">
-              水島 匠
+            <h1 className="flex flex-wrap items-baseline gap-3 leading-none tracking-tight">
+              <span className="text-2xl font-bold text-slate-900">
+                水島 匠
+              </span>
+              <span className="text-lg text-slate-500 font-medium whitespace-nowrap">
+                Takumi Mizushima
+              </span>
             </h1>
-            <p className="text-lg text-slate-500 font-medium whitespace-nowrap mt-1">
-              Takumi Mizushima
-            </p>
           </div>
         </header>
 
