@@ -5,15 +5,23 @@ export default function Home() {
     <div className="min-h-screen bg-slate-50 text-slate-700 py-20 px-6 font-sans">
       <main className="max-w-xl mx-auto space-y-16">
         
-        {/* Header */}
-        <header className="flex items-center gap-2"> {/* アイコンが極小なのでgapも最小限に */}
+        {/* Header: Twitter風アイコンと名前を1行で表示 */}
+        <header className="flex items-center gap-3">
           
-          {/* 写真アイコン部分：(16px) */}
-          <div className="relative w-4 h-4 flex-shrink-0 bg-slate-200 rounded-full overflow-hidden border border-slate-100 shadow-sm">
+          {/* 【修正箇所】
+            Tailwindのクラスだけでなく、style属性で強制的に幅・高さを16pxに固定しました。
+            overflow-hiddenで、はみ出した部分は確実にカットします。
+          */}
+          <div 
+            className="relative flex-shrink-0 bg-slate-200 rounded-full overflow-hidden border border-slate-100 shadow-sm"
+            style={{ width: '16px', height: '16px' }} // ここでサイズを強制
+          >
             <img
               src="/profile.jpg"
               alt="水島 匠のプロフィール写真"
-              className="w-full h-full object-cover" 
+              width="16"  // HTML属性でも強制
+              height="16" // HTML属性でも強制
+              className="w-full h-full object-cover"
             />
           </div>
 
