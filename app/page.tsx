@@ -30,7 +30,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 2. Education: 1列に修正 */}
+        {/* 2. Education */}
         <section>
           <h2 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">
             Education
@@ -39,14 +39,9 @@ export default function Home() {
             <span className="text-slate-400 font-medium whitespace-nowrap">
               2023.04 - 2027.03
             </span>
-            <a 
-              href="https://www.math.s.chiba-u.ac.jp/index.html"
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="font-medium text-slate-900 hover:text-blue-700 hover:underline underline-offset-4 transition-colors"
-            >
+            <span className="font-medium text-slate-900">
               千葉大学 理学部 数学・情報数理学科
-            </a>
+            </span>
           </div>
         </section>
 
@@ -96,9 +91,9 @@ export default function Home() {
           <h2 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">
             Contact & Links
           </h2>
-          <div className="space-y-3">
+          <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <Mail className="w-4 h-4 text-slate-400" />
+              <Mail className="w-4 h-4 text-slate-400 flex-shrink-0" />
               <a 
                 href="mailto:mizushima.edu.math@gmail.com" 
                 className="text-slate-600 hover:text-slate-900 transition-colors underline decoration-slate-300 underline-offset-4"
@@ -107,7 +102,7 @@ export default function Home() {
               </a>
             </div>
             <div className="flex items-center gap-3">
-              <Github className="w-4 h-4 text-slate-400" />
+              <Github className="w-4 h-4 text-slate-400 flex-shrink-0" />
               <a 
                 href="https://github.com/TakumiMizushima" 
                 target="_blank"
@@ -115,6 +110,24 @@ export default function Home() {
                 className="text-slate-600 hover:text-slate-900 transition-colors underline decoration-slate-300 underline-offset-4"
               >
                 GitHub
+              </a>
+            </div>
+            {/* 大学リンク（改行入り） */}
+            <div className="flex items-start gap-3">
+              <ExternalLink className="w-4 h-4 text-slate-400 mt-1 flex-shrink-0" />
+              <a 
+                href="https://www.math.s.chiba-u.ac.jp/index.html" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-600 hover:text-slate-900 transition-colors group leading-relaxed"
+              >
+                <span className="underline decoration-slate-300 underline-offset-4 group-hover:decoration-slate-900">
+                  千葉大学 理学部 数学・情報数理学科
+                </span>
+                <br />
+                <span className="underline decoration-slate-300 underline-offset-4 group-hover:decoration-slate-900 block mt-1">
+                  千葉大学 大学院 融合理工学府 数学情報科学専攻<br/>数学・情報数理学コース
+                </span>
               </a>
             </div>
           </div>
