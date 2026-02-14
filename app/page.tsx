@@ -20,13 +20,12 @@ export default function Home() {
             />
           </div>
 
-          {/* 名前部分 */}
           <div>
             <h1 className="flex flex-wrap items-baseline gap-3 leading-none tracking-tight">
               <span className="text-2xl font-bold text-slate-900">
                 水島 匠
               </span>
-              <span className="text-lg text-slate-500 font-medium whitespace-nowrap">
+              <span className="text-sm font-normal text-slate-400 whitespace-nowrap">
                 Takumi Mizushima
               </span>
             </h1>
