@@ -86,14 +86,12 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 5. Contact & Links */}
+        {/* 5. Contact */}
         <section>
           <h2 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">
-            Contact & Links
+            Contact
           </h2>
           <div className="space-y-4">
-            
-            {/* Email */}
             <div className="flex items-center gap-3">
               <Mail className="w-4 h-4 text-slate-400 flex-shrink-0" />
               <a 
@@ -103,8 +101,6 @@ export default function Home() {
                 mizushima.edu.math@gmail.com
               </a>
             </div>
-            
-            {/* GitHub */}
             <div className="flex items-center gap-3">
               <Github className="w-4 h-4 text-slate-400 flex-shrink-0" />
               <a 
@@ -116,7 +112,16 @@ export default function Home() {
                 GitHub
               </a>
             </div>
+          </div>
+        </section>
 
+        {/* 6. Links */}
+        <section>
+          <h2 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">
+            Links
+          </h2>
+          <div className="space-y-4">
+            
             {/* 千葉大学 学部 */}
             <div className="flex items-start gap-3">
               <ExternalLink className="w-4 h-4 text-slate-400 mt-1 flex-shrink-0" />
@@ -145,11 +150,11 @@ export default function Home() {
               </a>
             </div>
   
-            {/* 筑波大学 大学院*/}
+            {/* 筑波大学 */}
             <div className="flex items-start gap-3">
               <ExternalLink className="w-4 h-4 text-slate-400 mt-1 flex-shrink-0" />
               <a 
-                href="https://www.education.tsukuba.ac.jp/edu-mp/nge-sp/" 
+                href="https://www.education.tsukuba.ac.jp/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-600 hover:text-slate-900 transition-colors underline decoration-slate-300 underline-offset-4 leading-relaxed"
@@ -159,7 +164,7 @@ export default function Home() {
                 <span className="inline-block">次世代学校教育創成サブプログラム 数学教育領域</span>
               </a>
             </div>
-            
+
           </div>
         </section>
 
