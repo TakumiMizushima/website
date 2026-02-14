@@ -33,11 +33,11 @@ export default function Home() {
 
         <section>
           <h2 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">
-            Affiliation
+            所属
           </h2>
           <div className="space-y-2 text-slate-700 leading-relaxed">
             <p className="font-medium text-slate-900">
-              千葉大学 理学部 数学・情報数理学科 4年
+              千葉大学 理学部 数学・情報数理学科
             </p>
             <p className="font-medium text-slate-900">
               中村 誠希 研究室 (数理論理学・理論計算機科学)
@@ -47,7 +47,7 @@ export default function Home() {
 
         <section>
           <h2 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">
-            Education
+            学歴
           </h2>
           <div className="flex flex-wrap items-baseline gap-3 text-sm leading-relaxed">
             <span className="text-slate-400 font-medium whitespace-nowrap">
@@ -61,7 +61,7 @@ export default function Home() {
 
         <section>
           <h2 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">
-            Research Interests
+            
           </h2>
           <ul className="space-y-4 text-slate-700 list-disc list-inside marker:text-slate-300">
             <li>
@@ -81,7 +81,7 @@ export default function Home() {
 
         <section>
           <h2 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">
-            Materials
+            教材・資料
           </h2>
           <div className="flex items-start gap-3">
             <ExternalLink className="w-5 h-5 text-slate-400 mt-0.5 flex-shrink-0" />
@@ -94,13 +94,20 @@ export default function Home() {
               >
                 千葉大学数学25ヵ年解答解説 (2000-2025)
               </a>
+              <p className="text-slate-500 text-sm mt-1 font-light">
+                TeX・Python・Streamlitを用いて作成した、千葉大学の数学入試問題の解答解説集です。
+                <br />
+                出題年度・分野・難易度でのソート機能や、PDFダウンロード機能を実装しました。
+                <br />
+                ※著作権の都合上、非公開にしております。
+              </p>
             </div>
           </div>
         </section>
 
         <section>
           <h2 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">
-            Contact
+            お問い合わせ
           </h2>
           <div className="space-y-4">
             <div className="flex items-center gap-3">
@@ -112,23 +119,12 @@ export default function Home() {
                 mizushima.edu.math@gmail.com
               </a>
             </div>
-            <div className="flex items-center gap-3">
-              <Github className="w-4 h-4 text-slate-400 flex-shrink-0" />
-              <a 
-                href="https://github.com/TakumiMizushima" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-slate-600 hover:text-slate-900 transition-colors underline decoration-slate-300 underline-offset-4"
-              >
-                GitHub
-              </a>
-            </div>
           </div>
         </section>
 
         <section>
           <h2 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">
-            Links
+            関連リンク
           </h2>
           <div className="space-y-4">
             <div className="flex items-start gap-3">
