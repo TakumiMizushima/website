@@ -35,7 +35,7 @@ export default function Home() {
           <h2 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">
             Education
           </h2>
-          <div className="flex flex-wrap items-baseline gap-x-4 text-sm leading-relaxed">
+          <div className="flex flex-wrap items-baseline gap-3 text-sm leading-relaxed">
             <span className="text-slate-400 font-medium whitespace-nowrap">
               2023.04 - 2027.03
             </span>
@@ -92,6 +92,8 @@ export default function Home() {
             Contact & Links
           </h2>
           <div className="space-y-4">
+            
+            {/* Email */}
             <div className="flex items-center gap-3">
               <Mail className="w-4 h-4 text-slate-400 flex-shrink-0" />
               <a 
@@ -101,6 +103,8 @@ export default function Home() {
                 mizushima.edu.math@gmail.com
               </a>
             </div>
+            
+            {/* GitHub */}
             <div className="flex items-center gap-3">
               <Github className="w-4 h-4 text-slate-400 flex-shrink-0" />
               <a 
@@ -112,24 +116,50 @@ export default function Home() {
                 GitHub
               </a>
             </div>
-            {/* 大学リンク（改行入り） */}
+
+            {/* 千葉大学 学部 */}
             <div className="flex items-start gap-3">
               <ExternalLink className="w-4 h-4 text-slate-400 mt-1 flex-shrink-0" />
               <a 
                 href="https://www.math.s.chiba-u.ac.jp/index.html" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-slate-600 hover:text-slate-900 transition-colors group leading-relaxed"
+                className="text-slate-600 hover:text-slate-900 transition-colors underline decoration-slate-300 underline-offset-4 leading-relaxed"
               >
-                <span className="underline decoration-slate-300 underline-offset-4 group-hover:decoration-slate-900">
-                  千葉大学 理学部 数学・情報数理学科
-                </span>
-                <br />
-                <span className="underline decoration-slate-300 underline-offset-4 group-hover:decoration-slate-900 block mt-1">
-                  千葉大学 大学院 融合理工学府 数学情報科学専攻<br/>数学・情報数理学コース
-                </span>
+                千葉大学 理学部 数学・情報数理学科
               </a>
             </div>
+
+            {/* 千葉大学 大学院 */}
+            <div className="flex items-start gap-3">
+              <ExternalLink className="w-4 h-4 text-slate-400 mt-1 flex-shrink-0" />
+              <a 
+                href="https://www.math.s.chiba-u.ac.jp/index.html" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-600 hover:text-slate-900 transition-colors underline decoration-slate-300 underline-offset-4 leading-relaxed"
+              >
+                <span className="inline-block">千葉大学 大学院 融合理工学府</span>
+                {" "}
+                <span className="inline-block">数学情報科学専攻 数学・情報数理学コース</span>
+              </a>
+            </div>
+  
+            {/* 筑波大学 大学院*/}
+            <div className="flex items-start gap-3">
+              <ExternalLink className="w-4 h-4 text-slate-400 mt-1 flex-shrink-0" />
+              <a 
+                href="https://www.education.tsukuba.ac.jp/edu-mp/nge-sp/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-600 hover:text-slate-900 transition-colors underline decoration-slate-300 underline-offset-4 leading-relaxed"
+              >
+                <span className="inline-block">筑波大学 人間総合科学学術院 教育学位プログラム</span>
+                {" "}
+                <span className="inline-block">次世代学校教育創成サブプログラム 数学教育領域</span>
+              </a>
+            </div>
+            
           </div>
         </section>
 
