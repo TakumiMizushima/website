@@ -73,7 +73,7 @@ export default function Home() {
             <li>
               <span className="font-medium text-slate-900">数学教育学</span>
               <p className="text-slate-500 text-sm pl-6 mt-1 font-light">
-                特に高等教育における「証明と論理」の教育方法について関心があります。
+                特に高校数学における「集合と命題」の教育方法について関心があります。
               </p>
             </li>
           </ul>
