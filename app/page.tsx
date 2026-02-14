@@ -6,17 +6,19 @@ export default function Home() {
       <main className="max-w-xl mx-auto space-y-16">
         
         {/* Header: Twitter風アイコンと名前を1行で表示 */}
-        <header className="flex items-center gap-4">
-          {/* 写真アイコン部分（小さくしました） */}
-          <div className="relative w-12 h-12 flex-shrink-0 bg-slate-200 rounded-full overflow-hidden border border-slate-100 shadow-sm">
+        <header className="flex items-center gap-6"> {/* gapを少し広げました */}
+          
+          {/* 写真アイコン部分：サイズを修正 */}
+          {/* w-12(48px)だと高解像度画像が潰れるため、w-20(80px)に変更 */}
+          <div className="relative w-20 h-20 flex-shrink-0 bg-slate-200 rounded-full overflow-hidden border border-slate-100 shadow-sm">
             <img
               src="/profile.jpg"
               alt="水島 匠のプロフィール写真"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover" 
             />
           </div>
 
-          {/* 名前部分（横並びに変更） */}
+          {/* 名前部分 */}
           <div>
             <h1 className="flex flex-wrap items-baseline gap-3 leading-none tracking-tight">
               <span className="text-2xl font-bold text-slate-900">
