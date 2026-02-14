@@ -5,11 +5,11 @@ export default function Home() {
     <div className="min-h-screen bg-slate-50 text-slate-700 py-20 px-6 font-sans">
       <main className="max-w-xl mx-auto space-y-16">
         
-        {/* Header: Twitter風アイコンと名前を1行で表示 */}
-        <header className="flex items-center gap-3"> {/* アイコンが小さいのでgapを狭めました */}
+        {/* Header */}
+        <header className="flex items-center gap-2"> {/* アイコンが極小なのでgapも最小限に */}
           
-          {/* 写真アイコン部分：さらに小さくアイコンサイズに修正 */}
-          <div className="relative w-10 h-10 flex-shrink-0 bg-slate-200 rounded-full overflow-hidden border border-slate-100 shadow-sm">
+          {/* 写真アイコン部分：(16px) */}
+          <div className="relative w-4 h-4 flex-shrink-0 bg-slate-200 rounded-full overflow-hidden border border-slate-100 shadow-sm">
             <img
               src="/profile.jpg"
               alt="水島 匠のプロフィール写真"
@@ -19,11 +19,11 @@ export default function Home() {
 
           {/* 名前部分 */}
           <div>
-            <h1 className="flex flex-wrap items-baseline gap-3 leading-none tracking-tight">
-              <span className="text-xl font-bold text-slate-900"> {/* 名前も少し小さくしてバランスを取りました */}
+            <h1 className="flex flex-wrap items-baseline gap-2 leading-none tracking-tight">
+              <span className="text-xl font-bold text-slate-900">
                 水島 匠
               </span>
-              <span className="text-base text-slate-500 font-medium whitespace-nowrap"> {/* 英字も少し小さく */}
+              <span className="text-base text-slate-500 font-medium whitespace-nowrap">
                 Takumi Mizushima
               </span>
             </h1>
