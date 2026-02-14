@@ -5,7 +5,6 @@ export default function Home() {
     <div className="min-h-screen bg-slate-50 text-slate-700 pt-8 pb-20 px-6 font-sans">
       <main className="max-w-xl mx-auto space-y-16">
         
-        {/* Header: アイコンと名前を横並びに */}
         <header className="flex items-center gap-4">
           
           <div 
@@ -31,8 +30,6 @@ export default function Home() {
             </h1>
           </div>
         </header>
-
-        {/* --- 以下、コンテンツ部分はそのまま --- */}
         <section>
           <h2 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">
             Affiliation
