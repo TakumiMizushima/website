@@ -24,7 +24,7 @@ export default function Home() {
               <span className="text-2xl font-bold text-slate-900">
                 水島 匠
               </span>
-              <span className="text-sm font-normal text-slate-400 whitespace-nowrap">
+              <span className="text-xs font-normal text-slate-400 whitespace-nowrap">
                 Takumi Mizushima
               </span>
             </h1>
@@ -53,7 +53,7 @@ export default function Home() {
               2023.04 - 2027.03
             </span>
             <span className="font-medium text-slate-900">
-              千葉大学 理学部 数学・情報数理学科
+              　千葉大学 理学部 数学・情報数理学科
             </span>
           </div>
         </section>
