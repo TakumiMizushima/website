@@ -2,20 +2,38 @@ import { Github, Mail, ExternalLink } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-700 py-20 px-6 font-sans">
+    <div className="min-h-screen bg-slate-50 text-slate-700 pt-8 pb-20 px-6 font-sans">
       <main className="max-w-xl mx-auto space-y-16">
         
-        {/* Header */}
-        <header className="flex items-baseline gap-4">
-          <h1 className="text-3xl font-bold text-slate-900 tracking-tight">
-            水島 匠
-          </h1>
-          <p className="text-lg text-slate-500 font-medium whitespace-nowrap">
-            Takumi Mizushima
-          </p>
+        {/* Header: アイコンと名前を横並びに */}
+        <header className="flex items-center gap-4">
+          
+          <div 
+            className="flex-shrink-0 bg-slate-200 rounded-full overflow-hidden border border-slate-100 shadow-sm"
+            style={{ width: '40px', height: '40px', minWidth: '40px', minHeight: '40px' }}
+          >
+            <img
+              src="/profile.jpg"
+              alt="水島 匠のプロフィール写真"
+              className="object-cover"
+              style={{ width: '100%', height: '100%', display: 'block' }}
+            />
+          </div>
+
+          {/* 名前部分 */}
+          <div>
+            <h1 className="flex flex-wrap items-baseline gap-3 leading-none tracking-tight">
+              <span className="text-2xl font-bold text-slate-900">
+                水島 匠
+              </span>
+              <span className="text-lg text-slate-500 font-medium whitespace-nowrap">
+                Takumi Mizushima
+              </span>
+            </h1>
+          </div>
         </header>
 
-        {/* 1. Affiliation */}
+        {/* --- 以下、コンテンツ部分はそのまま --- */}
         <section>
           <h2 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">
             Affiliation
@@ -30,7 +48,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 2. Education */}
         <section>
           <h2 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">
             Education
@@ -45,7 +62,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 3. Research Interests */}
         <section>
           <h2 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">
             Research Interests
@@ -66,7 +82,6 @@ export default function Home() {
           </ul>
         </section>
 
-        {/* 4. Materials */}
         <section>
           <h2 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">
             Materials
@@ -86,7 +101,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 5. Contact */}
         <section>
           <h2 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">
             Contact
@@ -115,14 +129,11 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 6. Links */}
         <section>
           <h2 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">
             Links
           </h2>
           <div className="space-y-4">
-            
-            {/* 千葉大学 学部 */}
             <div className="flex items-start gap-3">
               <ExternalLink className="w-4 h-4 text-slate-400 mt-1 flex-shrink-0" />
               <a 
@@ -134,8 +145,6 @@ export default function Home() {
                 千葉大学 理学部 数学・情報数理学科
               </a>
             </div>
-
-            {/* 千葉大学 大学院 */}
             <div className="flex items-start gap-3">
               <ExternalLink className="w-4 h-4 text-slate-400 mt-1 flex-shrink-0" />
               <a 
@@ -149,8 +158,6 @@ export default function Home() {
                 <span className="inline-block">数学情報科学専攻 数学・情報数理学コース</span>
               </a>
             </div>
-  
-            {/* 筑波大学 */}
             <div className="flex items-start gap-3">
               <ExternalLink className="w-4 h-4 text-slate-400 mt-1 flex-shrink-0" />
               <a 
@@ -164,7 +171,6 @@ export default function Home() {
                 <span className="inline-block">次世代学校教育創成サブプログラム 数学教育領域</span>
               </a>
             </div>
-
           </div>
         </section>
 
