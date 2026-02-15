@@ -67,7 +67,7 @@ export default function Home() {
               <span className="font-medium text-slate-900">数理論理学</span>
               <div className="text-slate-500 text-sm pl-6 mt-2 font-light space-y-2">
                 <p>
-                  特に証明論 (Proof Theory) に関心があります。現在は以下の文献を参考に、様相論理や証明論の基礎を学んでいます。
+                  特に証明論に関心があります。現在は以下の文献を読みながら、様相論理や証明論の基礎を学んでいます。
                 </p>
                 <ul className="list-none space-y-1 text-slate-600 pl-1 border-l-2 border-slate-200 ml-1">
                   <li>鹿島 亮『コンピュータサイエンスにおける様相論理』</li>
